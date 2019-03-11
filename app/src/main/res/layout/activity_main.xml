@@ -9,13 +9,25 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-    <LinearLayout android:layout_width="match_parent"
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+
+             <LinearLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:orientation="horizontal"
                   android:gravity="center">
 
 
-        <de.hdodenhof.circleimageview.CircleImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/cewek"
                 android:layout_width="96dp"
@@ -24,13 +36,13 @@
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
 
-        <TextView android:layout_width="wrap_content"
+            <TextView android:layout_width="wrap_content"
                   android:layout_height="match_parent"
                   android:gravity="center"
                   android:text="VS"
                   android:textSize="30dp"/>
 
-        <de.hdodenhof.circleimageview.CircleImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/cowok"
                 android:layout_width="96dp"
@@ -46,6 +58,7 @@
             android:text="ACAK"
             android:layout_gravity="center"/>
 
+        </LinearLayout>
 
-
+    </android.support.v7.widget.CardView>
 </LinearLayout>
