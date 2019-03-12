@@ -14,17 +14,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun cariPasangan(){
-        val randomCewek = Random().nextInt(3)+1
-        val randomCowok = Random().nextInt(3)+1
+        val randomCewek = Random().nextInt(5)+1
+        val randomCowok = Random().nextInt(5)+1
         val drawableResCewek = when (randomCewek){
             1 ->R.drawable.pi1
             2 ->R.drawable.pi2
-            else ->R.drawable.pi3
+            3 ->R.drawable.pi3
+            4 ->R.drawable.pi4
+            else ->R.drawable.pi5
         }
         val drawableResCowok = when (randomCowok){
             1 ->R.drawable.pa1
             2 ->R.drawable.pa2
-            else ->R.drawable.pa3
+            3 ->R.drawable.pa3
+            4 ->R.drawable.pa4
+            else ->R.drawable.pa5
 
         }
         cewek.setImageResource(drawableResCewek)

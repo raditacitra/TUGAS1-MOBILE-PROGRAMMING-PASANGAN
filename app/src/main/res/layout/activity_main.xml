@@ -6,8 +6,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:background="@color/colorAccent"
         android:orientation="vertical"
         tools:context=".MainActivity">
+
+    <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="Temukan Pasanganmu!!"
+                  android:textSize="30dp"
+                  android:textStyle="bold"/>
+
+    </LinearLayout>
 
     <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -32,6 +46,7 @@
                 android:id="@+id/cewek"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
+                android:layout_margin="30dp"
                 android:src="@drawable/pi1"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -40,6 +55,7 @@
                   android:layout_height="match_parent"
                   android:gravity="center"
                   android:text="VS"
+                      android:textStyle="bold"
                   android:textSize="30dp"/>
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -47,16 +63,20 @@
                 android:id="@+id/cowok"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
+                android:layout_margin="30dp"
                 android:src="@drawable/pa1"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
     </LinearLayout>
 
-    <Button android:layout_width="100dp"
+    <Button android:layout_width="200dp"
             android:id="@+id/buttonacak"
             android:layout_height="wrap_content"
             android:text="ACAK"
-            android:layout_gravity="center"/>
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent1"/>
 
         </LinearLayout>
 
